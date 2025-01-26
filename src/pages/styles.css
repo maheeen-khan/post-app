@@ -1,0 +1,26 @@
+:root{
+    --secondary-color: #344CB7;
+}
+body{
+    background-color: #ebf1eb !important;
+}
+.login{
+    color:var(--secondary-color) ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.log{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.log:hover{
+    background-color: #5d71c9 !important;
+    color: white !important;
+}
+.forgot{
+    color: #344CB7;
+}
+#checkbox{
+    accent-color: #344CB7 !important;
+    padding: 5px;
+}
