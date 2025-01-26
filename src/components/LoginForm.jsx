@@ -1,5 +1,5 @@
 import React from 'react';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import { LockOutlined, MailOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Flex } from 'antd';
 
 const LoginForm = () => {
@@ -20,15 +20,15 @@ const LoginForm = () => {
       onFinish={onFinish}
     >
       <Form.Item
-        name="username"
+        name="email"
         rules={[
           {
             required: true,
-            message: 'Please input your Username!',
+            message: 'Please input your email!',
           },
         ]}
       >
-        <Input prefix={<UserOutlined />} placeholder="Username" />
+        <Input prefix={<MailOutlined />} placeholder="Email"/>
       </Form.Item>
       <Form.Item
         name="password"
@@ -45,7 +45,7 @@ const LoginForm = () => {
         <Flex justify="space-between" align="center">
           <Form.Item name="remember" valuePropName="checked" noStyle>
             <div className="d-flex gap-2 align-content-center">
-          <input id="checkbox" type="checkbox" checked /> Remember me </div>
+              <input id="checkbox" type="checkbox" /> Remember me </div>
           </Form.Item>
           <span className='forgot'> Forgot password </span>
         </Flex>

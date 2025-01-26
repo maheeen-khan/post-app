@@ -1,11 +1,13 @@
 :root{
+    --primary-color:#000957;
     --secondary-color: #344CB7;
+    --fancy-color: #FFEB00
 }
 body{
     background-color: #ebf1eb !important;
 }
 .login{
-    color:var(--secondary-color) ;
+    color:#edde33;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
@@ -23,4 +25,8 @@ body{
 #checkbox{
     accent-color: #344CB7 !important;
     padding: 5px;
+}
+.sub-head{
+    color:var(--secondary-color) ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
