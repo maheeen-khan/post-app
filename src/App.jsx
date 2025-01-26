@@ -1,13 +1,11 @@
 import './App.css'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
+import AppRoutes from './routes/appRoutes'
 
 function App() {
 
   return (
     <>
-      {/* <LoginPage/> */}
-      <RegisterPage/>
+      <AppRoutes/>
     </>
   )
 }
