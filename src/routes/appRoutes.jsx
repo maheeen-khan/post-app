@@ -4,6 +4,7 @@ import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
 import {auth, onAuthStateChanged} from '../firebaseConfig/firebase.js'
 import HomePage from '../pages/HomePage.jsx'
+import PageNotFound from '../pages/PageNotFound.jsx'
 
 
 const AppRoutes = () => {
@@ -37,6 +38,7 @@ const AppRoutes = () => {
                 <Route path='/' element={isUser ? <HomePage/> : <LoginPage/>}></Route>
                 <Route path='/register' element={isUser ? <HomePage/> : <RegisterPage/>}></Route>
                 <Route path='/home' element={isUser ? <HomePage/> : <LoginPage/>}></Route>
+                <Route path='*' element={<PageNotFound/>}></Route>
 
 
             </Routes>
