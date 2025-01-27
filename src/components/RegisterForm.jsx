@@ -1,12 +1,12 @@
 import React from 'react';
 import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Flex } from 'antd';
+import { Link } from 'react-router-dom';
+const RegisterForm = ({register}) => {
 
-const RegisterForm = () => {
-
-    const onFinish = (values) => {
-        console.log('Received values of form: ', values);
-    };
+    // const onFinish = (values) => {
+    //     console.log('Received values of form: ', values);
+    // };
 
     return (
         <Form className='mx-auto'
@@ -17,7 +17,7 @@ const RegisterForm = () => {
             style={{
                 maxWidth: 360,
             }}
-            onFinish={onFinish}
+            onFinish={register}
         >
             
 
@@ -69,9 +69,9 @@ const RegisterForm = () => {
 
             <Form.Item>
                 <Button block htmlType="submit" className='mb-2 log'>
-                    Log in
+                   Register
                 </Button>
-                Don't have an account ? Register now!
+                Don't have an account ? <Link to={'/'}> Register now! </Link>
             </Form.Item>
         </Form>
     );
