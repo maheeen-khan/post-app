@@ -71,7 +71,7 @@ const RegisterForm = ({register}) => {
                 <Button block htmlType="submit" className='mb-2 log'>
                    Register
                 </Button>
-                Don't have an account ? <Link to={'/'}> Register now! </Link>
+                Already have an account ? <Link to={'/'}> Go to Login</Link>
             </Form.Item>
         </Form>
     );

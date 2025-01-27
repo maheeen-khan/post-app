@@ -30,3 +30,27 @@ body{
     color:var(--secondary-color) ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.google {
+    width: 34px;
+    height: 36px;
+}
+
+
+#or {
+    width: 30em;
+    text-align: center;
+    border-bottom: 1px solid #9a9a9a;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 12px;
+}
+
+#or span {
+    background: #ebf1eb;
+    padding: 0 10px;
+}
+@media screen and (max-width: 320px){
+    #or {
+        width: 100% !important;
+    }
+}
