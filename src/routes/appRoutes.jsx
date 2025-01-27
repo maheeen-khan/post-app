@@ -3,9 +3,15 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
 import {auth, onAuthStateChanged} from '../firebaseConfig/firebase.js'
+import HomePage from '../pages/HomePage.jsx'
+
+
 const AppRoutes = () => {
 
-  const [isUser,setUser]= useState(false)
+  //here we defined onAuthStateChanged bcoz of protected Routes to see whether user logged in or not!
+
+  const [isUser,setUser]= useState(false);
+
   useEffect(()=>{
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -28,9 +34,9 @@ const AppRoutes = () => {
         
             <Routes>
 
-                <Route path='/' element={<LoginPage/>}></Route>
-                <Route path='/register' element={<RegisterPage/>}></Route>
-                
+                <Route path='/' element={isUser ? <HomePage/> : <LoginPage/>}></Route>
+                <Route path='/register' element={isUser ? <HomePage/> : <RegisterPage/>}></Route>
+                <Route path='/home' element={isUser ? <HomePage/> : <LoginPage/>}></Route>
 
 
             </Routes>

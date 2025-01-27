@@ -1,12 +1,12 @@
 import React from 'react';
 import { LockOutlined, MailOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Flex } from 'antd';
+import {Link} from 'react-router-dom'
+const LoginForm = ({login}) => {
 
-const LoginForm = () => {
-
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-  };
+  // const onFinish = (values) => {
+  //   console.log('Received values of form: ', values);
+  // };
 
   return (
     <Form className='mx-auto'
@@ -17,7 +17,7 @@ const LoginForm = () => {
       style={{
         maxWidth: 360,
       }}
-      onFinish={onFinish}
+      onFinish={login}
     >
       <Form.Item
         name="email"
@@ -55,7 +55,7 @@ const LoginForm = () => {
         <Button block htmlType="submit" className='mb-2 log'>
           Log in
         </Button>
-        Don't have an account ? Register now!
+        Don't have an account ? <Link to={'/register'}> Register now! </Link> 
       </Form.Item>
     </Form>
   );
