@@ -21,6 +21,8 @@ const siderStyle = {
   bottom: 0,
   scrollbarWidth: 'thin',
   scrollbarGutter: 'stable',
+  marginTop: '63px',
+  background: 'white'
 };
 const items = [
   UserOutlined,
@@ -46,23 +48,26 @@ const MyLayout = ({ children }) => {
   return (
 
     <Layout hasSider>
-      <Sider style={siderStyle}>
-        <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={items} />
+
+      <Sider style={siderStyle} >
+        <div className="demo-logo-vertical mt-5" />
+        <Menu theme="light" mode="inline" defaultSelectedKeys={['4']} items={items} />
       </Sider>
+
       <Layout>
         <Header
           style={{
             padding: 0,
             background: colorBgContainer,
-            // width:'100%',
-            // position: 'fixed',
+            width:'100%',
+            position: 'fixed',
             // textAlign:'right',
             color: '#344CB7',
             fontFamily: 'Verdana',
             display: 'flex',
             justifyContent: 'space-around',
             alignItems: 'center',
+            borderBottom: '1px solid gray'
           }}
 
         >
@@ -77,9 +82,10 @@ const MyLayout = ({ children }) => {
         </Header>
         <Content
           style={{
-            margin: '24px 16px 0',
+            margin: '10px 16px 0',
             overflow: 'initial',
-            marginTop: '50px'
+            // marginTop: '82px',
+            marginLeft: '90px'
           }}
         >
           <div
