@@ -62,7 +62,7 @@ const MyLayout = ({ children }) => {
             background: colorBgContainer,
             width:'100%',
             position: 'fixed',
-            // textAlign:'right',
+            zIndex: '2',
             color: '#344CB7',
             fontFamily: 'Verdana',
             display: 'flex',
@@ -89,14 +89,15 @@ const MyLayout = ({ children }) => {
             margin: '10px 16px 0',
             overflow: 'initial',
             // marginTop: '82px',
-            marginLeft: '90px'
+            marginLeft: '90px',
+            
           }}
         >
           <div
             style={{
               padding: 24,
               textAlign: 'center',
-              background: colorBgContainer,
+              background: ' rgb(235, 235, 235)',
               borderRadius: borderRadiusLG,
             }}
           >
