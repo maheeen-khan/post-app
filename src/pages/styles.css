@@ -120,6 +120,14 @@ body{
     cursor: pointer;
 }
 
+.name{
+  color: 'grey';
+  font-size: '13px';
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 15px;
+  font-weight: lighter
+}
 @media screen and (max-width: 320px){
     #or {
         width: 100% !important;

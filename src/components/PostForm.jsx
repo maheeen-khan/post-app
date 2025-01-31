@@ -47,8 +47,8 @@ const PostForm = ({addPost}) => {
         <Input />
       </Form.Item>
       <Form.Item
-        name="desc"
-        label="Description"
+        name="description"
+        label="What do you want to say ?"
         rules={[
           {
             required: true,

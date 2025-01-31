@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
+import { EditOutlined, DeleteOutlined , SettingOutlined, LikeOutlined } from '@ant-design/icons';
 import { Avatar, Card, Flex, Switch } from 'antd';
 
 
 const actions = [
-  <EditOutlined key="edit" />,
-  <SettingOutlined key="setting" />,
-  <EllipsisOutlined key="ellipsis" />,
+  <LikeOutlined key="like" />,
+  // <EditOutlined key="edit" />,
+  // <SettingOutlined key="setting" />,
+  // <EllipsisOutlined key="ellipsis" />,
+  // <DeleteOutlined key="delete"/>
 ];
 
 
@@ -14,20 +16,27 @@ const PostCard = ({field1, field2}) => {
   // const [loading, setLoading] = useState(false);
   return (
     <Flex gap="middle" align="center" vertical>
-      {/* <Switch checked={!loading} onChange={(checked) => setLoading(!checked)} /> */}
+      
       <Card
-        // loading={loading}
         actions={actions}
         style={{
-          minWidth: 300,
+          minWidth: '100%',
+          alignContent : 'center',
         }}
       >
-        <Card.Meta
+        <Card.Meta 
           avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" />}
-          title={field1}
+         
           description={
+            <> 
+              <p style={{color: 'black', fontSize: '18px'}}>{field2}</p>
+            </>
+          }
+           title={
             <>
-              <p>{field2}</p>
+            <p className='name'>
+            {field1}
+            </p>
             </>
           }
         />

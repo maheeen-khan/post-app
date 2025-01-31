@@ -97,34 +97,34 @@ const MyLayout = ({ children }) => {
             style={{
               padding: 24,
               textAlign: 'center',
-              background: ' rgb(235, 235, 235)',
+              background: ' rgb(247, 247, 247)',
               borderRadius: borderRadiusLG,
             }}
           >
             {children}
-            {
-              // indicates very long content
+            {/* {
+              indicates very long content
               Array.from(
                 {
                   length: 100,
                 },
                 (_, index) => (
                   <React.Fragment key={index}>
-                    {/* {index % 20 === 0 && index ? 'more' : '...'} */}
+                    {index % 20 === 0 && index ? 'more' : '...'}
                     <br />
                   </React.Fragment>
                 ),
               )
-            }
+            } */}
           </div>
         </Content>
-        <Footer
+        {/* <Footer
           style={{
             textAlign: 'center',
           }}
         >
           Ant Design ©{new Date().getFullYear()} Created by Ant UED
-        </Footer>
+        </Footer> */}
       </Layout>
     </Layout>
   );
