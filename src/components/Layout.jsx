@@ -97,7 +97,7 @@ const MyLayout = ({ children }) => {
             style={{
               padding: 24,
               textAlign: 'center',
-              background: ' rgb(247, 247, 247)',
+              background: '#EBF1EB',
               borderRadius: borderRadiusLG,
             }}
           >
