@@ -4,7 +4,7 @@ import { Avatar, Card, Flex, Switch } from 'antd';
 
 
 const actions = [
-  <LikeOutlined key="like" />,
+  <LikeOutlined key="like" style={{ color: 'rgb(38, 201, 255)', fontSize: '18px' }} className='like-btn'/>,
   // <EditOutlined key="edit" />,
   // <SettingOutlined key="setting" />,
   // <EllipsisOutlined key="ellipsis" />,

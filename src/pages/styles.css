@@ -128,6 +128,9 @@ body{
   border-radius: 15px;
   font-weight: lighter
 }
+.like-btn :hover{
+  color: rgb(99, 216, 255);
+}
 @media screen and (max-width: 320px){
     #or {
         width: 100% !important;
