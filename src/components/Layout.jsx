@@ -37,7 +37,7 @@ const items = [
 ].map((icon, index) => ({
   key: String(index + 1),
   icon: React.createElement(icon),
-  label:`Menu`,
+  label:`Menu ${index+1}`,
 }));
 
 
