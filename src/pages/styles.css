@@ -58,7 +58,7 @@ body{
     cursor: pointer;
     display: flex;
     align-items: center;
-    border: 1px solid #34974d;
+    border: 1px solid #3b82f6;
     background-color: var(--secondary-color);
   }
   
@@ -102,11 +102,11 @@ body{
   }
   
   .button:active .button__icon {
-    background-color: #2e8644;
+    background-color: #344CB7;
   }
   
   .button:active {
-    border: 1px solid #2e8644;
+    border: 1px solid #344CB7;
   }
 .search{
     border-radius: 40px;
